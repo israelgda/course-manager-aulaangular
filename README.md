@@ -1,7 +1,14 @@
-# CourseManager
+# CourseManager - Aula de Angular + Bootstrap bootcamp DIO
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.3.
+Esse projeto foi criado com [Angular CLI](https://github.com/angular/angular-cli) version 12.1.3.
 
+# Sobre o projeto
+Projeto de aplicação Frontend para administração e cadastro de cursos.
+
+# Objetivos
+O objetivo desta aula é o aprendizado sobre o framework Angular e Bootstrap na constraução de frontend de aplicações. Curso fornecido e realizado através da plataforma da Digital Innovation One, no bootcamp Java + Angular com parcerida da Capgemini.
+
+# Outros comandos
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
