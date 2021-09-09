@@ -34,7 +34,8 @@
             </td>
             <td>{{ item.releaseDate | date: 'dd/MM/yyyy '}}</td>
             <td>
-                <a [routerLink]="[ '/courses/info', item.id ]" class="btn btn-primary">Info</a>
+                <a [routerLink]="[ '/courses/info', item.id ]" class="btn btn-primary mr-2">Edit</a>
+                <button (click)="deleteById(item.id)" class="btn btn-danger mr-2">Delete</button>
             </td>
         </tr>
     </tbody>
