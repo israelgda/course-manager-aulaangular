@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { Observable } from "rxjs";
 import { Course } from "./course";
 import { CourseService } from "./course.service";
 
@@ -16,11 +17,20 @@ export class CourseListComponent implements OnInit{
     constructor(private couserService: CourseService){
 
     }
+
     ngOnInit(): void{
-        this._courses = this.couserService.retrieveAll();
-        this.filteredCourses = this._courses;
+        this.retrieveAll();
     }
 
+    retrieveAll(): void{
+        this.couserService.retrieveAll().subscribe({
+            next: courses => {
+                    this._courses = courses;
+                    this.filteredCourses = this._courses;
+            },
+            error: err => console.log('Error', err)
+        })
+    }
     set filter(value: string) {
         this._filterBy = value;
         this.filteredCourses = this._courses.filter((courses: Course) => 
