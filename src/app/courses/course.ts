@@ -1,15 +1,15 @@
 export class Course {
     id: number;
-    name: String;
-    description: String;
-    imageUrl: String;
+    name: string;
+    description: string;
+    imageUrl: string;
     price: number;
-    code: String;
+    code: string;
     duration: number;
     rating: number;
-    releaseDate: String;
+    releaseDate: string;
 
-    constructor(id: number, name: String, imageUrl: String, price: number, code: String, duration: number, rating: number,releaseDate: String, description: String){
+    constructor(id: number, name: string, imageUrl: string, price: number, code: string, duration: number, rating: number,releaseDate: string, description: string){
         this.id = id;
         this.name = name;
         this.imageUrl = imageUrl;
